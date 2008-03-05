@@ -1,0 +1,36 @@
+The Rails Generator Generator
+=============
+
+A rails generator that generates a rails generator skeleton for easy creation of new 
+rails generators.
+Like plugin generator but with generators.
+
+Usage
+========
+NAME
+     generator - creates a generator
+
+SYNOPSIS
+     generator [Generator name] [<default>|base|named]
+     
+     Good names are Login ModelRelation CommonMigration.
+     Generator type argument is optional, posible values are base (will generate
+     a  Rails::Generator::Base) or named (will generate a Rails::Generator::NamedBase).
+     By default type argument is named.
+
+DESCRIPTION
+     This generator creates a generator skeleton.
+
+            
+EXAMPLE
+      ./script/generate generator Login
+
+     This will generate an generator with name login (login_generator). 
+
+Credits
+=======
+
+Created by Sergio Espeja
+http://www.sergioespeja.com
+http://spejman.blogspot.com (spanish blog)
+http://spejman-on-rails.blogspot.com (english blog)
