@@ -1,0 +1,19 @@
+NAME
+     generator - creates a generator
+
+SYNOPSIS
+     generator [Generator name] [<default>|base|named]
+     
+     Good names are Login ModelRelation CommonMigration.
+     Generator type argument is optional, posible values are base (will generate
+     a  Rails::Generator::Base) or named (will generate a Rails::Generator::NamedBase).
+     By default type argument is named.
+
+DESCRIPTION
+     This generator creates a generator skeleton.
+
+            
+EXAMPLE
+      ./script/generate generator Login
+
+     This will generate an generator with name login (login_generator). 

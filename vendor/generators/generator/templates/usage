@@ -1,0 +1,14 @@
+NAME
+     <%= singular_name %> - short description of the generator
+
+SYNOPSIS
+     <%= singular_name %> [synopsis of the parameters]
+
+DESCRIPTION
+     Long description of the generator.
+
+            
+EXAMPLE
+      ./script/generate <%= singular_name %> ExampleParam
+
+     Result of the example
