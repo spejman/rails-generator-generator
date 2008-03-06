@@ -4,7 +4,7 @@ class GeneratorGenerator < Rails::Generator::NamedBase
     record do |m|            
       new_generator_dir = "vendor/generators/#{singular_name}"
       m.directory new_generator_dir
-      if arg[0] == "base"
+      if args[0] == "base"
         m.template "base_generator.rb", "#{new_generator_dir}/#{singular_name}_generator.rb"
       else
         m.template "named_generator.rb", "#{new_generator_dir}/#{singular_name}_generator.rb"
