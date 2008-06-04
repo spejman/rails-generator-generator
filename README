@@ -27,6 +27,32 @@ EXAMPLE
 
      This will generate an generator with name login (login_generator). 
 
+HOWTO Install a generator
+================================
+
+When you create your generator with rails generator generator, it installs it at vendor/generators.
+
+In order to make rails take notice of the generator you have 3 options:
+ 1) Keep it at vendor/generators.
+ 2) Copy it into the a subir called generators in one plugins.
+ 3) Create a gem whose name finishes with "_generator".
+
+Example: example_generator with 3 files example_generator.rb, USAGE and example_template.rb.
+1) 
+    RAILS_ROOT/vendor/generators/example_generator/example_generator.rb
+    RAILS_ROOT/vendor/generators/example_generator/USAGE
+    RAILS_ROOT/vendor/generators/example_generator/templates/example_template.rb
+
+2)
+    RAILS_ROOT/vendor/plugins/PLUGIN_NAME/generators/example_generator/example_generator.rb
+    RAILS_ROOT/vendor/plugins/PLUGIN_NAME/generators/example_generator/USAGE
+    RAILS_ROOT/vendor/plugins/PLUGIN_NAME/generators/example_generator/templates/example_template.rb
+
+3) Into the root of the gem called example_generator (notice that the name ends with "_generator"):
+    example_generator.rb
+    USAGE
+    templates/example_template.rb
+
 Credits
 =======
 
