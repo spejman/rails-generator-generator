@@ -5,6 +5,11 @@ A rails generator that generates a rails generator skeleton for easy creation of
 rails generators.
 Like plugin generator but with generators.
 
+You can install it as a gem or copying the code into vendor/generators:
+  mkdir vendor/generators
+  cd vendor/generators
+  git clone git://github.com/spejman/rails-generator-generator.git
+
 Usage
 ========
 NAME
